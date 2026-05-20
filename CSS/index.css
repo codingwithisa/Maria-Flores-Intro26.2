@@ -7,6 +7,7 @@ h1 {
   color: rgb(72, 72, 75);
   text-align: center;
   font-size: 48px;
+  font-weight: bold;
 }
 section {
   margin: 20px;
@@ -15,6 +16,7 @@ section {
 h2 {
   color: rgb(243, 193, 243);
   font-size: 30px;
+  font-weight: bold;
 }
 li {
   background-color: rgb(230, 230, 250);
@@ -40,4 +42,14 @@ nav {
   justify-content: center;
   gap: 20px;
   list-style: none;
+}
+#Experience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#Experience li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
