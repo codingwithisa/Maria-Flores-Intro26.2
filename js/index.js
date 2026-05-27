@@ -1,6 +1,7 @@
-const body = document.body;
 const footer = document.createElement("footer");
-body.appendChild(footer);
+document.body.appendChild(footer);
+
+const selectedFooter = document.querySelector("footer");
 
 const today = new Date();
 const thisYear = today.getFullYear();
@@ -8,12 +9,11 @@ const thisYear = today.getFullYear();
 const copyright = document.createElement("p");
 copyright.innerHTML = `© Maria Flores ${thisYear}`;
 
-footer.appendChild(copyright);
+selectedFooter.appendChild(copyright);
 
 const skills = ["JavaScript", "HTML", "CSS", "GitHub", "VS Code"];
 
-const skillsSection = document.querySelector("#Skills");
-const skillsList = skillsSection.querySelector("ul");
+const skillsList = document.querySelector("#skills ul");
 
 for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement("li");
