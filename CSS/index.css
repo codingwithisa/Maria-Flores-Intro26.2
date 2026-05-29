@@ -53,3 +53,16 @@ nav {
   justify-content: space-between;
   padding: 10px;
 }
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+#skills li {
+  background-color: rgb(230, 230, 250);
+  padding: 10px;
+  border-radius: 8px;
+}
