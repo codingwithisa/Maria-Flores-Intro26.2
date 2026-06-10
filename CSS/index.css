@@ -66,3 +66,10 @@ nav {
   padding: 10px;
   border-radius: 8px;
 }
+#Projects ul {
+  padding-left: 20px;
+}
+
+#Projects li {
+  margin-bottom: 10px;
+}
