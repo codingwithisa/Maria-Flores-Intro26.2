@@ -102,3 +102,10 @@ button {
     padding: 12px;
   }
 }
+#Projects ul {
+  padding-left: 20px;
+}
+
+#Projects li {
+  margin-bottom: 10px;
+}
