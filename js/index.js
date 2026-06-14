@@ -20,3 +20,26 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i];
   skillsList.appendChild(skill);
 }
+
+const projectSection = document.querySelector("#Projects");
+const projectList = projectSection.querySelector("ul");
+
+fetch("https://api.github.com/users/codingwithisa/repos")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (repositories) {
+    console.log(repositories);
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function (error) {
+    console.error("Error fetching repositories:", error);
+
+    projectList.innerHTML =
+      "<li>Sorry, unable to load projects at this time.</li>";
+  });
