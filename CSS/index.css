@@ -53,18 +53,54 @@ nav {
   justify-content: space-between;
   padding: 10px;
 }
-#skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
+
+/* Message Form */
+
+form {
+  max-width: 600px;
 }
-#skills li {
-  background-color: rgb(230, 230, 250);
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
   padding: 10px;
-  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#messages li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  input,
+  textarea,
+  button {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
 }
 #Projects ul {
   padding-left: 20px;
