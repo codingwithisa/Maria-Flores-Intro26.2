@@ -39,4 +39,7 @@ fetch("https://api.github.com/users/codingwithisa/repos")
   })
   .catch(function (error) {
     console.error("Error fetching repositories:", error);
+
+    projectList.innerHTML =
+      "<li>Sorry, unable to load projects at this time.</li>";
   });
