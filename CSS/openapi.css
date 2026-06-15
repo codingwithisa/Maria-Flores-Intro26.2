@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(19, 19, 19);
+  color: rgb(243, 193, 243);
+}
+
+button:hover {
+  background-color: rgb(252, 137, 195);
+}
+
+#result {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 10px;
+  min-width: 350px;
+  box-shadow: 0 4px 12px rgb(192, 192, 192);
+}

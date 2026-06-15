@@ -4,4 +4,3 @@
 
 Portfolio Project for Intro to Programming course with Code the Dream.
 Hello, I am learning Git and VS Code 🚀
-lesson 10 submission
